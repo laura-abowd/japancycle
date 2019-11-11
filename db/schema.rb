@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_11_080533) do
+ActiveRecord::Schema.define(version: 2019_11_11_092159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,9 @@ ActiveRecord::Schema.define(version: 2019_11_11_080533) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "cycle_id"
+    t.bigint "user_id"
     t.index ["cycle_id"], name: "index_bookings_on_cycle_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "cycles", force: :cascade do |t|
@@ -32,6 +34,9 @@ ActiveRecord::Schema.define(version: 2019_11_11_080533) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.string "photo"
+    t.index ["user_id"], name: "index_cycles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -42,9 +47,13 @@ ActiveRecord::Schema.define(version: 2019_11_11_080533) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.text "description"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "bookings", "cycles"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "cycles", "users"
 end
