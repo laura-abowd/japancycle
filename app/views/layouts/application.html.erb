@@ -5,6 +5,7 @@
     <title>Japancycle</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
@@ -12,41 +13,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-<body>
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <%= link_to "#", class: "navbar-brand" do %>
-    <div><i class="fas fa-bicycle"><h3 class="ml-3">Japan cycle</h3></i>
-    </div>
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <%= link_to "Log in", "#", class: "nav-link" %><p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
+  <body>
+    <%= render "shared/header" %>
     <%= yield %>
-
-    <div class="footer">
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="footer-copyright">
-        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-      </div>
-    </div>
+    <%= render "shared/footer" %>
   </body>
-  </html>
+</html>
