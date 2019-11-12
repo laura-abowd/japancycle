@@ -1,0 +1,75 @@
+// BIG CARD
+.big-card {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  background: yellow;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.big-card img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+}
+
+.big-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.big-card p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.big-card .big-card-infos {
+  width: 50%;
+  padding: 16px;
+}
+
+// HTML
+// <div class="big-card">
+//   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+//   <div class="big-card-infos">
+//     <h2>Product name</h2>
+//     <p>Product description with <strong>relevant info</strong> only.</p>
+//   </div>
+// </div>
+
+
+
+// SMALL CARD
+
+.small-card {
+  background: black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.small-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.small-card .small-card-infos {
+  h2 {
+   font-size: 24px;
+  }
+
+  padding: 16px;
+}
+

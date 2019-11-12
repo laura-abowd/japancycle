@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :cycles, only: [:index, :show, :new, :create, :destroy] do
   resource :bookings, only: [:create]
 end
+  get 'test', to: 'pages#test'
 end
