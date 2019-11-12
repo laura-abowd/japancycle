@@ -1,0 +1,35 @@
+.navbar-japancycle {
+  justify-content: space-between;
+  background: #090909;
+  color: #FFED31;
+  text-decoration: none;
+
+  a {
+    color: #FFED31 !important;
+  }
+
+  a:visited {
+    color: #FFED31;
+  }
+
+  a:hover {
+    color: #FFED31;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+
+.logo {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.navbar-japancycle .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-japancycle .navbar-brand img {
+  width: 40px;
+}
+
