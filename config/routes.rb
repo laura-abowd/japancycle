@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard'
   resources :users, only: [:show]
   resources :cycles, only: [:index, :show, :new, :create, :destroy] do
-  resource :bookings, only: [:create]
-end
+    resource :bookings, only: [:create]
+  end
 end
