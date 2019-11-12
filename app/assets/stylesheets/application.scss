@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+<<<<<<<< HEAD:app/assets/stylesheets/application.scss
  **/
 
 /* Graphical variables */
@@ -20,7 +21,7 @@
 /*@import "config/bootstrap_variables";*/
 
  /*External libraries*/
-/*@import "bootstrap/scss/bootstrap";*/
+@import "bootstrap/scss/bootstrap";
 /*@import "font-awesome-sprockets";*/
 /*@import "font-awesome";*/
 
@@ -29,5 +30,3 @@
 /*@import "pages/index";*/
 /*@import "components/banner";*/
 /*@import "components/stickynavbar";*/
-
-
