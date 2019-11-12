@@ -5,6 +5,7 @@
     <title>Japancycle</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
@@ -13,16 +14,13 @@
   </head>
 
 
-<body>
-
-       <%= render 'shared/navbar' %>
-       <%= render 'shared/flashes' %>
 
 
-
-
+  <body>
+     <%= render 'shared/navbar' %>
+      <%= render 'shared/flashes' %>
+    <%= render "shared/header" %>
     <%= yield %>
-
-
+    <%= render "shared/footer" %>
   </body>
-  </html>
+</html>
