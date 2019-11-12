@@ -1,21 +1,21 @@
 // This is from Le wagon UI kit.
 // It's not updated yet.
 .footer {
-  background: #F4F4F4;
+  background: #090909;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: white;
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: black;
-  opacity: 0.15;
+  color: #FFED31;
+  opacity: 0.50;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
@@ -24,5 +24,5 @@
   opacity: 1;
 }
 .footer .fa-heart {
-  color: #D23333;
+  color: white;
 }
