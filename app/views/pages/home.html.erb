@@ -3,20 +3,25 @@
 <%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
 
 <div class="container mt-5 mb-5">
-<div class="row">
-<% @cycles.each do |cycle| %>
-<div class="col-md-4 mb-5">
-  <div class="small-card">
-    <img src="https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound"/>
-    <div class="small-card-infos">
-      <h2>Product title!</h2>
-    </div>
-  </div>
-  </div>
+  <div class="row">
+    <% @cycles.each do |cycle| %>
+      <div class="col-md-4 mb-5">
+        <div class="small-card">
+          <img src="https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound"/>
+          <div class="small-card-infos d-flex justify-content-between">
+            <h5 class="card-title"><%= cycle.brand %></h5>
+            <h5 class="card-text"><%= cycle.category.capitalize %></h5>
+            <!-- <h2>Product title!</h2> -->
+          </div>
+          <div class="d-flex justify-content-end mr-3 mb-2" style="font-size: 18px; font-weight: bolder;">
+            <p class="card-text">¥<%= cycle.price %></p>
+          </div>
+        </div>
+      </div>
 
-<% end %>
+    <% end %>
   </div>
-  </div>
+</div>
 
 <%= link_to 'go index', cycles_path %>
 <%= link_to 'View Profile', dashboard_path %>
