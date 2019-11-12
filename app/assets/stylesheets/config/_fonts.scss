@@ -1,0 +1,21 @@
+// Import Google fonts
+@import url("https://fonts.googleapis.com/css?family=Coda+Caption:800|Open+Sans:300,400,600,700&display=swap");
+
+// Define fonts for body and headers
+$body-font: "Open Sans", "Helvetica", "sans-serif";
+$headers-font: "Coda Caption", "Helvetica", "sans-serif";
+
+// To use a font file (.woff) uncomment following lines
+// @font-face {
+//   font-family: "Font Name";
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
+// }
+// $my-font: "Font Name";
+
+// font-family: 'Numans', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Coda Caption', sans-serif;
