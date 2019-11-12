@@ -1,9 +1,17 @@
-<!-- <h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
- -->
+<!-- <h1>Pages#home</h1> <p>Find me in app/views/pages/home.html.erb</p> -->
 
-<%= video_tag("london.mp4",  autoplay: :autoplay,
-loop: :loop, mute: :mute, class: "video-container") %>
+<%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
+
+<% @cycles.each do |cycle| %>
+<div class="col-xs-3">
+  <div class="small-card">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"/>
+    <div class="small-card-infos">
+      <h2>Product title</h2>
+    </div>
+  </div>
+</div>
+<% end %>
 
 <%= link_to 'go index', cycles_path %>
 <%= link_to 'View Profile', dashboard_path %>
