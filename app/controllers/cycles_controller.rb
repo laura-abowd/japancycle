@@ -1,5 +1,7 @@
 class CyclesController < ApplicationController
 
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
   def index
     @cycles = Cycle.all
     # @cycle = Cycle.find(params[:id])
