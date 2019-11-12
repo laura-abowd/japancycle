@@ -2,6 +2,7 @@ class CyclesController < ApplicationController
 
   def index
     @cycles = Cycle.all
+    # @cycle = Cycle.find(params[:id])
   end
 
   def show
