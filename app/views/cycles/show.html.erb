@@ -1,16 +1,16 @@
 <br>
-<div class="container m-5 ">
+<div class="container mt-3">
   <div class="big-card">
     <ul>
-        <h2><%= @cycle.brand.capitalize  %></h2>
+        <h2><%= @cycle.brand.capitalize%></h2>
         <br>
         <br>
       <li><strong>Category: </strong><%= @cycle.category.capitalize %></li>
       <li><strong>Color: </strong><%= @cycle.color.capitalize %></li>
       <li><strong>Location: </strong><%= @cycle.location.capitalize %></li>
       <li><strong>Price: </strong>¥<%= @cycle.price %></li>
-      <li><strong>Contact Name:</strong> <%=@cycle.user.first_name%> </li>
-      <li><strong>Contact e-mail:</strong> <%=@cycle.user.email%> </li>
+      <li><strong>Contact Name:</strong> <%= @cycle.user.first_name.capitalize %> </li>
+      <li><strong>Contact e-mail:</strong> <%= @cycle.user.email.capitalize %> </li>
     </ul>
 
     <%= image_tag @cycle.photo, alt: "current bicycle" %>
@@ -30,6 +30,5 @@
     <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
     <% end %>
   <% end %>
-
-  <br>
+<br><br>
 </div>
