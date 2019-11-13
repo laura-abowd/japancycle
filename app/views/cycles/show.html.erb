@@ -1,6 +1,21 @@
-<h1>Show</h1>
 
-the big card with the information of the bike
+
+<div class="container">
+  <div class="big-card">
+    <ul>
+        <h2><%= @cycle.brand.capitalize  %></h2>
+        <br>
+        <br>
+      <li><strong>Category: </strong><%= @cycle.category.capitalize %></li>
+      <li><strong>Color: </strong><%= @cycle.color.capitalize %></li>
+      <li><strong>Location: </strong><%= @cycle.location.capitalize %></li>
+      <li><strong>Price: </strong>¥<%= @cycle.price %></li>
+      <li><strong>Contact:</strong> 08040533245</li>
+    </ul>
+    <img src="https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound"/>
+  </div>
+</div>
+
 
 
 <div class="container">
@@ -25,5 +40,6 @@ the big card with the information of the bike
 
 <%= link_to 'go home', root_path %>
 <%= link_to 'go index', cycles_path %>
+
 
 
