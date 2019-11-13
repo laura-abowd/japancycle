@@ -1,7 +1,9 @@
 
-
-
+Booking.delete_all
+Cycle.delete_all
 User.delete_all
+
+
 User.create!(email: "david@gmail.com", password: 'secret', first_name: 'harry', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
 User.create!(email: "hermione@gmail.com", password: 'secret', first_name: 'hermione', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
 User.create!(email: "dobby@gmail.com", password: 'secret', first_name: 'dobby', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
@@ -21,7 +23,6 @@ User.create!(email: "remus@gmail.com", password: 'secret', first_name: 'remus', 
 
 users = User.all
 
-Cycle.delete_all
 Cycle.create!(user: users.sample, brand: "Trek", color: 'red', category: 'mountain', price: '12000', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: 'Meguro', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC1hxBQzHRQXLyJaf-SFeKPbMErhvzMmw30HwTy8YL5gDe7MCm')
 Cycle.create!(user: users.sample, brand: "Trek", color: 'blue', category: 'hybrid', price: '10000', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: 'Setagaya', photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPxVEbg0IP5oWmMcKasAHlHGbIIt_Fp0OSXSRC4w-vgdzDr8Yh')
 Cycle.create!(user: users.sample, brand: "Trek", color: 'green', category: 'road', price: '30000', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: 'Roppongi', photo: 'https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound')
@@ -41,7 +42,6 @@ Cycle.create!(user: users.sample, brand: "Specialized", color: 'black', category
 
 cycles = Cycle.all
 
-Booking.delete_all
 Booking.create!(pick_up_date: Date.today + 1.week, user: users.sample, cycle: cycles.sample)
 Booking.create!(pick_up_date: Date.today + 1.week, user: users.sample, cycle: cycles.sample)
 Booking.create!(pick_up_date: Date.today + 1.week, user: users.sample, cycle: cycles.sample)

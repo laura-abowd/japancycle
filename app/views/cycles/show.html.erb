@@ -1,5 +1,4 @@
-<%= link_to 'go home', root_path %>
-<%= link_to 'go index', cycles_path %>
+
 
 <div class="container">
   <div class="big-card">
@@ -16,3 +15,31 @@
     <img src="https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound"/>
   </div>
 </div>
+
+
+
+<div class="container">
+  <%= simple_form_for([@cycle, @booking]) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :pick_up_date, label: "When will you pick this bike up by? (Max 1 week)" %>
+  <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
+
+
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+<% end %>
+
+</div>
+
+
+
+
+
+
+
+<%= link_to 'go home', root_path %>
+<%= link_to 'go index', cycles_path %>
+
+
+
