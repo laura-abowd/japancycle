@@ -1,7 +1,9 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-japancycle">
   <div class="logo" style="align-items: center">
-    <i class="fas fa-bicycle fa-flip-horizontal" style="font-size: 32px;"></i>
-    <%= link_to 'JapanCycle', root_path, id: "logo-font"%></div>
+    <i class="fas fa-biking"></i>
+    <%= link_to 'JapanCycle', root_path, id: "logo-font"%>
+    </div>
+
 
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
   </button> <%#= link_to "#", class: "navbar-brand" do %> <%#= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %> <#% end %> <%#= link_to "#", class: "navbar-brand" do %> <#%= image_tag
@@ -12,9 +14,6 @@
 
       <li class="nav-item active">
           <%= link_to "Explore", cycles_path, class: "nav-link navlink" %>
-        </li>
-        <li class="nav-item active">
-          <%= link_to "Home", "/", class: "nav-link navlink" %>
         </li>
       <% if user_signed_in? %>
         <li class="nav-item active">
