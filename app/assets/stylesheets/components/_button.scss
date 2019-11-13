@@ -2,10 +2,11 @@
 
 .nav-item {
   font-family: Open Sans;
-  border-radius: 10px;
-  border: solid 1px yellow;
+  margin: 5px;
   a:hover {
-  border-radius: 2px;
+  border: solid 1px yellow;
+  border-radius: 5px;
   font-weight: bolder;
+  transition: 1s;
   }
 }
