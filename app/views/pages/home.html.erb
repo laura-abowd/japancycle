@@ -1,9 +1,10 @@
 <!-- <h1>Pages#home</h1> <p>Find me in app/views/pages/home.html.erb</p> -->
 
 <%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
-  <nav class="navbar navbar-light bg-dark">
-  <span class="navbar-brand mb-0 h1">Featured Cycles</span>
-</nav>
+<br>
+<div class="container">
+  <h1>Cycles available near you</h1>
+</div>
 <div class="container mt-3 mb-3">
 
   <br>
@@ -20,7 +21,7 @@
             <!-- <h2>Product title!</h2> -->
           </div>
           <div class="d-flex justify-content-end mr-3 mb-2" style="font-size: 18px; font-weight: bolder;">
-            <p class="card-text">¥<%= cycle.price %></p>
+            <p class="card-price">¥<%= cycle.price %></p>
           </div>
         </div>
       </div>
