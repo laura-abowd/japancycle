@@ -12,7 +12,7 @@
 
   <div class="container mt-5 mb-5">
     <div class="row">
-      <% @cycles.first(9).each do |cycle| %>
+      <% @cycles.each do |cycle| %>
 
         <div class="col-md-4 mb-5">
           <%= link_to cycle_path(cycle) do %>
