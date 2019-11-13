@@ -1,11 +1,27 @@
 <!-- <h1>Pages#home</h1> <p>Find me in app/views/pages/home.html.erb</p> -->
 
+<div class="banner-container">
+  <div class="overlay">
+    <form class="“form-inline”">
+      <input id=“banner-typed-text” class=“form-control mr-sm-2” type=“search” style="background-color:yellow" placeholder=“Search” aria-label=“Search”>
+      <button class="“btn" btn-oneflat="btn-oneflat" style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button>
+    </form>
+  </div>
+  <%= video_tag("london.mp4", autoplay: true, loop: :loop, mute: :mute, class: "video-container") %>
+</div>
+
+<div class="container mt-3 mb-3">
+  <h1>Featured Bicycles</h1>
+  <p>Choose from one of our featured cycles below or search using our search bar above.</p>
+
+
 <%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
 <br>
 <div class="container">
   <h1>Cycles available near you</h1>
 </div>
 <div class="container mt-3 mb-3">
+
 
   <br>
   <div class="row">
@@ -25,8 +41,7 @@
           </div>
         </div>
       </div>
-<% end %>
     <% end %>
-  </div>
+  <% end %>
 </div>
-
+</div>
