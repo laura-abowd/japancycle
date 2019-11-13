@@ -5,10 +5,14 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.cycle = @cycle
     if @booking.save
-      redirect_to cycles_path
+      redirect_to confirmation_path(@booking)
     else
       render 'cycles/show'
     end
+  end
+
+  def confirmation
+
   end
 
   private
