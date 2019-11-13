@@ -1,3 +1,24 @@
 <h1>Show</h1>
+
+
+<div class="container">
+  <%= simple_form_for(@booking) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :pick_up_date, label: "When will you pick this bike up by? (Max 1 week)" %>
+  <%= f.input :description, label: "Would you like to share anything with the seller?" %>
+
+
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+<% end %>
+</div>
+
+
+
+
+
 <%= link_to 'go home', root_path %>
 <%= link_to 'go index', cycles_path %>
+
+
