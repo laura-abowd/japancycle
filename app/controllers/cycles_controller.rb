@@ -13,9 +13,11 @@ class CyclesController < ApplicationController
   end
 
   def create
-    @cycle = Cycle.new()
+    @cycle = Cycle.new(cycle_params)
+    @cycle.user = current_user
+
     if @cycle.save
-      redirect_to cycle_path
+      redirect_to cycles_path
     else
       render 'new'
     end

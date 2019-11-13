@@ -54,11 +54,20 @@
 // SMALL CARD
 
 .small-card {
-  background: black;
+  background: #090909;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 10px;
   overflow: hidden;
   color: white;
+}
+
+.small-card:hover {
+  box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
+  .card-price {
+    font-weight: bold;
+    color: #FFED31;
+    text-shadow: 1px 1px 2px red, 0 0 1em #FFED31, 0 0 0.2em #FFED31;
+  }
 }
 
 .small-card img {
@@ -71,7 +80,7 @@
   h2 {
    font-size: 16px;
   }
-  padding: 16px;
+  margin: 16px 16px 0px 16px;
 }
 
 #cyclephoto {

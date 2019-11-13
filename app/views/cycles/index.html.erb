@@ -1,4 +1,4 @@
-<%= link_to 'add a Cycle', new_cycle_path %>
+
 
 <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -6,13 +6,13 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-
+<br>
 <div class="container">
   <h1>Cycles available near you</h1>
 
   <div class="container mt-5 mb-5">
     <div class="row">
-      <% @cycles.first(9).each do |cycle| %>
+      <% @cycles.each do |cycle| %>
 
         <div class="col-md-4 mb-5">
           <%= link_to cycle_path(cycle) do %>
