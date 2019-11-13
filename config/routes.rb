@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'bookings/create'
   get 'users/dashboard'
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
     resource :bookings, only: [:create]
   end
   get 'test', to: 'pages#test'
+
 end

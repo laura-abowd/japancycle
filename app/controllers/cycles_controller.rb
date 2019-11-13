@@ -9,6 +9,7 @@ class CyclesController < ApplicationController
 
   def show
     @cycle = Cycle.find(params[:id])
+    @booking = Booking.new
   end
 
   def create
