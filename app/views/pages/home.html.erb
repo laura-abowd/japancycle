@@ -1,18 +1,27 @@
 <!-- <h1>Pages#home</h1> <p>Find me in app/views/pages/home.html.erb</p> -->
 <div class="banner-container">
   <div class="overlay">
-    <form class="“form-inline”">
-      <input id="“banner-typed-text”" class="“form-control" mr-sm-2”="mr-sm-2”" type="“search”" style="background-color:yellow" placeholder="“Search”" aria-label="“Search”">
-      <button class="“btn" btn-oneflat="btn-oneflat" style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button>
-    </form>
+    <!-- <form class="“form-inline”"> <input id="“banner-typed-text”" class="“form-control" mr-sm-2”="mr-sm-2”" type="“search”" style="background-color:yellow" placeholder="“Search”" aria-label="“Search”"> <button class="“btn" btn-oneflat="btn-oneflat"
+    style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button> </form> -->
+    <!-- "input-group mb-3" -->
+    <p>Explore Japan, book a bike.</p>
+    <div class="input-group input-group-lg">
+      <input type="text" style="background-color:yellow" class="form-control" placeholder="Search cycles" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-dark" style="background-color:black" type="button" id="button-addon2">Search</button>
+      </div>
+    </div>
   </div>
+  <div class="overlay-base">
+
   <%= video_tag("london.mp4", autoplay: true, loop: :loop, mute: :mute, class: "video-container") %>
 </div>
+</div>
 
-<div class="container mt-3 mb-3">
+<div class="container mt-5 mb-5">
   <h1>Featured Bicycles</h1>
-  <p>Choose from one of our featured cycles below or search using our search bar above.</p>
-  <div class="container mt-3 mb-3">
+
+  <div class="container mt-5 mb-5">
     <div class="row">
       <% @cycles.first(6).each do |cycle| %>
         <div class="col-md-4 mb-5">

@@ -18,7 +18,22 @@
 
 .overlay {
     position:absolute;
-    top:50%;
-    left:40%;
-    z-index:1;
+    top: 42%;
+    left: 33%;
+    z-index: 1;
+    width: 450px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px grey;
+    p {
+      color: black;
+      font-family: Numans;
+      font-size: 32px;
+      // opacity: 0.7;
+    }
+}
+
+.overlay-base {
+  background-color: black;
+  opacity: 0.5;
 }
