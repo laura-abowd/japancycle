@@ -2,9 +2,11 @@
 
 <%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
 
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mb-3">
+  <h1>Featured Bicycles</h1>
+  <br>
   <div class="row">
-    <% @cycles.each do |cycle| %>
+    <% @cycles.first(6).each do |cycle| %>
       <div class="col-md-4 mb-5">
         <div class="small-card">
           <img src="https://isabela.iweb.co.uk/image/aHR0cHM6Ly93d3cucmFsZWlnaC5jby51ay9tZWRpYS9jYXRhbG9nL3Byb2R1Y3QvaC9lL2hlbGlvbl8xaHRfZ3JlZW5faGUxMTdncm4tMl8xXzFfMV8xXzFfMV81XzIuanBn?q=75&w=2646&h=2646&e=1209600&t=outbound"/>
@@ -23,5 +25,5 @@
   </div>
 </div>
 
-<%= link_to 'go index', cycles_path %>
-<%= link_to 'View Profile', dashboard_path %>
+<%= link_to 'Explore', cycles_path %> |
+<%= link_to 'My Account', dashboard_path %>
