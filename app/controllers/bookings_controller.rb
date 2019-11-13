@@ -13,6 +13,8 @@ class BookingsController < ApplicationController
 
   def confirmation
 
+
+
   end
 
   private
