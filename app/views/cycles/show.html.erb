@@ -1,6 +1,5 @@
 <br>
-
-<div class="container">
+<div class="container m-5 ">
   <div class="big-card">
     <ul>
         <h2><%= @cycle.brand.capitalize  %></h2>
@@ -13,33 +12,31 @@
       <li><strong>Contact Name:</strong> <%=@cycle.user.first_name%> </li>
       <li><strong>Contact e-mail:</strong> <%=@cycle.user.email%> </li>
     </ul>
-    <%= image_tag @cycle.photo %>
+
+    <%= image_tag @cycle.photo, alt: "current bicycle" %>
+
   </div>
+
+  <br><br>
+
+    <%= simple_form_for([@cycle, @booking]) do |f| %>
+    <%= f.error_notification %>
+
+    <%= f.input :pick_up_date, label: "When will you pick this bike up by? (Max 1 week)" %>
+    <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
+
+    <%= f.button :submit, class: "btn-yellow" %>
+    <%= link_to cycles_path do %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
+    <% end %>
+  <% end %>
+
+  <br>
 </div>
 
 
 
-<div class="container">
-  <%= simple_form_for([@cycle, @booking]) do |f| %>
-  <%= f.error_notification %>
-
-  <%= f.input :pick_up_date, label: "When will you pick this bike up by? (Max 1 week)" %>
-  <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
-
-
-  <%= f.button :submit, class: "btn-primary" %>
-  <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
-<% end %>
-
-</div>
-
-
-
-
-
-
-
-<%= link_to 'Back', cycles_path %>
+<!--
 
 
 

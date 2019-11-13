@@ -7,3 +7,31 @@
   border: solid 1px yellow;
   }
 }
+
+.btn-yellow {
+  color: black;
+  font-weight: bolder;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: yellow;
+  transition: background 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #FFE900;
+  }
+
+.btn-blk {
+  color: black;
+  opacity: 0.6;
+  font-weight: bolder;
+  padding: 8px 24px;
+  background-color: white;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-blk:hover {
+  opacity: 1;
+  }
