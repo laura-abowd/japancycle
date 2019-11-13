@@ -9,6 +9,7 @@
   align-items: center;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .big-card img {
@@ -20,15 +21,16 @@
 }
 
 .big-card h2 {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   margin: 0;
 }
 
-.big-card p {
-  font-size: 12px;
+.big-card ul li {
+  list-style-type: none;
+  font-size: 20px;
   line-height: 1.4;
-  opacity: .7;
+  // opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
 }
