@@ -3,5 +3,7 @@ class UsersController < ApplicationController
 
   def dashboard
     @user = User.find(current_user.id)
+    @cycles = current_user.cycles
+    @bookings = current_user.bookings
   end
 end

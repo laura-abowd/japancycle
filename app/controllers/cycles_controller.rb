@@ -17,7 +17,7 @@ class CyclesController < ApplicationController
     @cycle.user = current_user
 
     if @cycle.save
-      redirect_to cycles_path
+      redirect_to dashboard_path
     else
       render 'new'
     end
