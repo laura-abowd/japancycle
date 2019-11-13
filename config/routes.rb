@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     resource :bookings, only: [:create]
   end
   get 'test', to: 'pages#test'
+  get 'bookings/:id/confirmation', to: 'bookings#confirmation', as: :confirmation
 
 end
