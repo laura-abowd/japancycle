@@ -3,7 +3,7 @@
 <div class="banner-container">
   <div class="overlay">
     <form class="“form-inline”">
-      <input id=“banner-typed-text” class=“form-control mr-sm-2” type=“search” style="background-color:yellow" placeholder=“Search” aria-label=“Search”>
+      <input id="“banner-typed-text”" class="“form-control" mr-sm-2”="mr-sm-2”" type="“search”" style="background-color:yellow" placeholder="“Search”" aria-label="“Search”">
       <button class="“btn" btn-oneflat="btn-oneflat" style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button>
     </form>
   </div>
@@ -13,35 +13,26 @@
 <div class="container mt-3 mb-3">
   <h1>Featured Bicycles</h1>
   <p>Choose from one of our featured cycles below or search using our search bar above.</p>
+  <div class="container mt-3 mb-3">
+    <div class="row">
+      <% @cycles.first(6).each do |cycle| %>
+        <div class="col-md-4 mb-5">
+          <div class="small-card">
+            <%= link_to cycle_path(cycle), id:"cyclephoto" do %>
+            <%= image_tag cycle.photo %>
 
-
-<%= video_tag("london.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-container") %>
-<br>
-<div class="container">
-  <h1>Cycles available near you</h1>
-</div>
-<div class="container mt-3 mb-3">
-
-
-  <br>
-  <div class="row">
-    <% @cycles.first(6).each do |cycle| %>
-      <div class="col-md-4 mb-5">
-        <div class="small-card">
-          <%= link_to cycle_path(cycle), id:"cyclephoto" do %>
-          <%= image_tag cycle.photo %>
-
-          <div class="small-card-infos d-flex justify-content-between">
-            <h5 class="card-title"><%= cycle.brand %></h5>
-            <h5 class="card-text"><%= cycle.category.capitalize %></h5>
-            <!-- <h2>Product title!</h2> -->
-          </div>
-          <div class="d-flex justify-content-end mr-3 mb-2" style="font-size: 18px; font-weight: bolder;">
-            <p class="card-price">¥<%= cycle.price %></p>
+            <div class="small-card-infos d-flex justify-content-between">
+              <h5 class="card-title"><%= cycle.brand %></h5>
+              <h5 class="card-text"><%= cycle.category.capitalize %></h5>
+              <!-- <h2>Product title!</h2> -->
+            </div>
+            <div class="d-flex justify-content-end mr-3 mb-2" style="font-size: 18px; font-weight: bolder;">
+              <p class="card-price">¥<%= cycle.price %></p>
+            </div>
           </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 </div>
