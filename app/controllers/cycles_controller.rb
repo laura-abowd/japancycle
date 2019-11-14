@@ -3,8 +3,10 @@ class CyclesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
+    if params[:query].present?
+      @cycles = Cycle.where(title: params[:query])
+    else
     @cycles = Cycle.all
-    # @cycle = Cycle.find(params[:id])
   end
 
   def show
