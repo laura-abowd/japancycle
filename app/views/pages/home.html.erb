@@ -1,26 +1,23 @@
-<!-- <h1>Pages#home</h1> <p>Find me in app/views/pages/home.html.erb</p> -->
 <div class="banner-container">
-  <div class="overlay">
-    <!-- <form class="“form-inline”"> <input id="“banner-typed-text”" class="“form-control" mr-sm-2”="mr-sm-2”" type="“search”" style="background-color:yellow" placeholder="“Search”" aria-label="“Search”"> <button class="“btn" btn-oneflat="btn-oneflat"
-    style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button> </form> -->
-    <!-- "input-group mb-3" -->
 
-    <p>Cycle around Japan.</p>
-      <%= simple_form_for :search, url: cycles_path, method: :get do |f| %>
-        <div class="search-form-control form-group">
-          <input class="form-control string required" type="text" name="query" id="banner-typed-text"/>
-          <button name="button" type="submit" class="btn btn-flat">
-            <i class="fas fa-search"></i> Search
-          </button>
+   <div id="tagline">
+      <h1>Shop for your next cycle with ease</h1>
+    </div>
+    <div class="overlay">
+        <div class="search-content">
+            <p>Explore more.</p>
+            <%= simple_form_for :search, url: cycles_path, method: :get do |f| %>
+            <div class="search-form-control form-group">
+                <input class="form-control string required" type="text" name="query" id="banner-typed-text" />
+                <button name="button" type="submit" class="btn btn-flat">
+                    <i class="fas fa-search"></i> Search
+                </button>
+
+            <% end %>
+            </div>
         </div>
-      <% end %>
-
-
-  </div>
-  <div class="overlay-base">
-
-  <%= video_tag("bike.mp4", autoplay: true, loop: :loop, mute: :mute, class: "video-container") %>
+    </div>
+    <div class="overlay-base">
+        <%= video_tag("bike.mp4", autoplay: true, loop: :loop, mute: :mute, class: "video-container") %>
+    </div>
 </div>
-</div>
-
-
