@@ -30,12 +30,7 @@
   text-decoration: none;
 }
 
-.fa-bell {
-  font-size: 25px;
-  position: absolute;
-  top: 20px;
-  right: 345px;
-}
+
 
 .navbar-japancycle .navbar-collapse {
   flex-grow: 0;
@@ -54,5 +49,10 @@
     border-color: yellow;
     transition: 1s;
   }
+}
+
+.drop-down-item {
+  color:  black;
+  font-family: Open Sans;
 }
 

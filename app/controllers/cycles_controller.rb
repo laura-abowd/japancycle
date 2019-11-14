@@ -38,7 +38,7 @@ class CyclesController < ApplicationController
 
   private
   def cycle_params
-    params.require(:cycle).permit(:brand, :color, :category, :price, :description, :location, :photo)
+    params.require(:cycle).permit(:brand, :color, :category, :price, :description, :location, :photo, :newstatus)
   end
 
 end
