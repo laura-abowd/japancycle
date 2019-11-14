@@ -9,11 +9,11 @@
   }
 
   a:visited {
-    color: #FFED31;
+    color: white;
   }
 
   a:hover {
-    color: #FFED31;
+    color: white;
     text-decoration: none;
     cursor: pointer;
   }
@@ -36,4 +36,16 @@
 
 .navbar-japancycle .navbar-brand img {
   width: 40px;
+}
+
+
+// navbar button
+
+.nav-item {
+  font-family: Numans;
+  border: solid 1px black;
+  a:hover {
+  border-color: yellow;
+  transition: 1s;
+  }
 }
