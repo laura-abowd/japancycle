@@ -19,4 +19,15 @@ console.log('Hello World from Webpacker')
 import 'bootstrap';
 
 import { loadDynamicBannerText } from '../components/banner';
-loadDynamicBannerText();
+loadDynamicBannerText("#banner-typed-text");
+
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#new_booking input[type=submit]', {
+  title: "Request submitted!",
+  text: "Kindly expect to receive the seller's response within 24 hours.",
+  icon: "success"
+}, (value) => {
+  document.getElementById('new_booking').submit();
+});
+
