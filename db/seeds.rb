@@ -4,22 +4,10 @@ Cycle.delete_all
 User.delete_all
 
 
-User.create!(email: "david@gmail.com", password: 'secret', first_name: 'harry', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "hermione@gmail.com", password: 'secret', first_name: 'hermione', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "dobby@gmail.com", password: 'secret', first_name: 'dobby', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "draco@gmail.com", password: 'secret', first_name: 'draco', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "albus@gmail.com", password: 'secret', first_name: 'albus', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "fred@gmail.com", password: 'secret', first_name: 'fred', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "george@gmail.com", password: 'secret', first_name: 'george', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "arthur@gmail.com", password: 'secret', first_name: 'arthur', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "molly@gmail.com", password: 'secret', first_name: 'molly', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "bellatrix@gmail.com", password: 'secret', first_name: 'bellatrix', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "hewhomustnotbenamed@gmail.com", password: 'secret', first_name: 'hewhomustnotbenamed', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "ron@gmail.com", password: 'secret', first_name: 'ron', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "ginny@gmail.com", password: 'secret', first_name: 'ginny', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "dudley@gmail.com", password: 'secret', first_name: 'dudley', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "fleur@gmail.com", password: 'secret', first_name: 'fleur', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "remus@gmail.com", password: 'secret', first_name: 'remus', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "lauralewagon@gmail.com", password: 'Laura', first_name: 'Laura', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "kloeylewagon@gmail.com", password: 'Kloey', first_name: 'Kloey', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "davidlewagon@gmail.com", password: 'David', first_name: 'David', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "naoto.n.suzuki@gmail.com", password: "Naoto", first_name: 'Naoto', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
 
 users = User.all
 
