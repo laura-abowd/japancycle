@@ -7,6 +7,7 @@ class CyclesController < ApplicationController
       @cycles = Cycle.where(title: params[:query])
     else
     @cycles = Cycle.all
+    end 
   end
 
   def show
@@ -39,4 +40,5 @@ class CyclesController < ApplicationController
   def cycle_params
     params.require(:cycle).permit(:brand, :color, :category, :price, :description, :location, :photo)
   end
+
 end
