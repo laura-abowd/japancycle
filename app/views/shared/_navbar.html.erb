@@ -15,8 +15,9 @@
       <% if user_signed_in? %>
         <li class="nav-item dropdown">
 
-          <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="fas fa-bell vertical-center"></i></div>
-            <div class="dropdown-menu">
+          <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <div id= "fa-bell"><i class="fas fa-bell fa-lg"></i></div></div>
+            <div id="notification-text" class="dropdown-menu">
               <%= link_to "Notifications", dashboard_path, class: "dropdown-item text-dark" %>
             </div>
         </li>
