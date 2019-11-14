@@ -12,7 +12,6 @@
 }
 
 .big-card.small {
-
   height: 200px;
   width: 50%;
   font-size: 18px;
@@ -85,13 +84,21 @@
   }
 }
 
+.fa-heart {
+    position: absolute;
+    bottom: 18px;
+    left: 28px;
+    font-size: 28px;
+  }
+
 .small-card:hover {
   box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
-  .card-price {
+}
+
+.card-price:hover {
     color: #FFED31;
     text-shadow: 1px 1px 2px #090909, 0 0 1em #FFED31, 0 0 0.2em #FFED31;
   }
-}
 
 .small-card img {
   width: 100%;
