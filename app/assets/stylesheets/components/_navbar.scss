@@ -30,6 +30,13 @@
   text-decoration: none;
 }
 
+.fa-bell {
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 345px;
+}
+
 .navbar-japancycle .navbar-collapse {
   flex-grow: 0;
 }
@@ -38,9 +45,6 @@
   width: 40px;
 }
 
-.fa-bell {
-  font-size: 30px;
-}
 // navbar button
 
 .nav-item {

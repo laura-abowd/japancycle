@@ -4,10 +4,10 @@ Cycle.delete_all
 User.delete_all
 
 
-User.create!(email: "lauralewagon@gmail.com", password: 'Laura', first_name: 'Laura', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "kloeylewagon@gmail.com", password: 'Kloey', first_name: 'Kloey', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "davidlewagon@gmail.com", password: 'David', first_name: 'David', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
-User.create!(email: "naoto.n.suzuki@gmail.com", password: "Naoto", first_name: 'Naoto', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "lauralewagon@gmail.com", password: 'password', first_name: 'Laura', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "kloeylewagon@gmail.com", password: 'password', first_name: 'Kloey', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "davidlewagon@gmail.com", password: 'password', first_name: 'David', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+User.create!(email: "naoto.n.suzuki@gmail.com", password: "password", first_name: 'Naoto', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
 
 users = User.all
 
