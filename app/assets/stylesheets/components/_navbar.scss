@@ -38,14 +38,17 @@
   width: 40px;
 }
 
-
+.fa-bell {
+  font-size: 30px;
+}
 // navbar button
 
 .nav-item {
   font-family: Numans;
   border: solid 1px black;
   a:hover {
-  border-color: yellow;
-  transition: 1s;
+    border-color: yellow;
+    transition: 1s;
   }
 }
+

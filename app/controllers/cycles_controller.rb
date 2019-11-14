@@ -6,7 +6,7 @@ class CyclesController < ApplicationController
     if params[:query].present?
       @cycles = Cycle.search_by_fields(params[:query])
     else
-      @cycles = Cycle.all
+    @cycles = Cycle.all
     end
   end
 
@@ -40,4 +40,5 @@ class CyclesController < ApplicationController
   def cycle_params
     params.require(:cycle).permit(:brand, :color, :category, :price, :description, :location, :photo)
   end
+
 end
