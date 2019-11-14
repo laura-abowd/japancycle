@@ -36,8 +36,7 @@
   <%= simple_form_for([@cycle, @booking]) do |f| %>
   <%= f.error_notification %>
 
-  <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
-    <%=f.input :Description, label: "Contact the seller to purcahse." %>
+    <%=f.input :Description, label: "Contact the seller to purchase." %>
 
     <%= f.button :submit, 'Request to purchase', class: "btn-yellow" %>
     <%= link_to cycles_path do %>
