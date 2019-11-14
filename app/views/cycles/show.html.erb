@@ -1,6 +1,7 @@
 <br>
 <div class="container mt-3">
   <div class="big-card">
+
     <div><h2><%= @cycle.brand.capitalize%></h2></div>
       <br>
       <br>
@@ -13,6 +14,7 @@
         <li><strong>Contact name </strong></li>
       </div>
 
+    
       <div style="list-style-type: none; display: inline-block; margin-left: 1em;">
         <li><%= @cycle.category.capitalize %></li>
         <li><%= @cycle.color.capitalize %></li>
@@ -26,21 +28,16 @@
 
   <br><br>
 
-    <%= simple_form_for([@cycle, @booking]) do |f| %>
-    <%= f.error_notification %>
+  <%= simple_form_for([@cycle, @booking]) do |f| %>
+  <%= f.error_notification %>
 
-
-    <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
+  <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
+    <%=f.input :Description, label: "Contact the seller to purcahse." %>
 
     <%= f.button :submit, 'Request to purchase', class: "btn-yellow" %>
     <%= link_to cycles_path do %>
     <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
     <% end %>
   <% end %>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 </div>
