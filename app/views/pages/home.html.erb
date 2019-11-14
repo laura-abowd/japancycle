@@ -5,12 +5,15 @@
     style="background-color:black; color: white" my-2="my-2" my-sm-0”="my-sm-0”" type="“submit”">Search</button> </form> -->
     <!-- "input-group mb-3" -->
     <p>Explore Japan, book a bike.</p>
-    <div class="input-group input-group-lg">
-      <input type="text" style="background-color:yellow" class="form-control" placeholder="Search cycles" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-dark" style="background-color:black" type="button" id="button-addon2">Search</button>
-      </div>
-    </div>
+<%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+<% end %>
+
   </div>
   <div class="overlay-base">
 
