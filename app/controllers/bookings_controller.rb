@@ -5,7 +5,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.cycle = @cycle
     if @booking.save
-      redirect_to confirmation_path(@booking)
+      redirect_to dashboard_path
     else
       render 'cycles/show'
     end
