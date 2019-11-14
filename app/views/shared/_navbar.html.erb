@@ -11,13 +11,15 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav justify-content-right">
-      <li class="notification">
-        <span class="fas fa-bell"></span>
-      </li>
+
       <li class="nav-item active">
         <%= link_to "Explore", cycles_path, class: "nav-link navlink" %>
       </li>
       <% if user_signed_in? %>
+
+      <li class="notification">
+        <span class="fas fa-bell"></span>
+      </li>
 
       <li class="nav-item active">
         <%= link_to "List a Cycle", new_cycle_path , class: "nav-link navlink" %>
