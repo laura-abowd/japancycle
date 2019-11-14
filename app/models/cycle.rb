@@ -1,4 +1,12 @@
 class Cycle < ApplicationRecord
+
+  include PgSearch::Model
+  pg_search_scope :search_by_fields,
+    against: [ :brand, :color, :category, :location],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+    }
+
   has_many :bookings
   belongs_to :user
 
@@ -8,3 +16,6 @@ class Cycle < ApplicationRecord
   validates :price, presence: true
   validates :location, presence: true
 end
+
+
+
