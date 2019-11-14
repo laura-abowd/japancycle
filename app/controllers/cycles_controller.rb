@@ -4,10 +4,10 @@ class CyclesController < ApplicationController
 
   def index
     if params[:query].present?
-      @cycles = Cycle.where(title: params[:query])
+      @cycles = Cycle.search_by_fields(params[:query])
     else
     @cycles = Cycle.all
-    end 
+    end
   end
 
   def show
