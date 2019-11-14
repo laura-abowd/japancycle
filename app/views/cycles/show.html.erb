@@ -13,7 +13,7 @@
       <li><strong>Contact e-mail:</strong> <%= @cycle.user.email.capitalize %> </li>
     </ul>
 
-    <%= image_tag @cycle.photo, alt: "current bicycle" %>
+    <%= image_tag @cycle.photo, alt: "current cycle" %>
 
   </div>
 
@@ -22,7 +22,7 @@
     <%= simple_form_for([@cycle, @booking]) do |f| %>
     <%= f.error_notification %>
 
-    <%= f.input :pick_up_date, label: "When will you pick this bike up by? (Max 1 week)" %>
+    <%= f.input :pick_up_date, label: "Please choose your pickup date. (Max 1 week)" %>
     <%=f.input :Description, label: "Would you like to share anything with the seller?" %>
 
     <%= f.button :submit, class: "btn-yellow" %>
