@@ -1,15 +1,14 @@
 // BIG CARD
 .big-card {
-  overflow: hidden;
-  height: 400px;
-  width: 100%;
+  // overflow: hidden;
+  height: 340px;
+  width: 90%;
   background: yellow;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   border-radius: 10px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .big-card img {
@@ -18,21 +17,36 @@
   object-fit: cover;
   position: absolute;
   right: 0;
+  padding: 16px;
+  background-color: white;
 }
 
 .big-card h2 {
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
   margin: 0;
+  position: absolute;
+  top:20px;
+  left:25px;
+}
+
+.info-list {
+  padding: 30px 15px 0px 35px;
+  font-size: 25px;
+  text-decoration: none;
+
 }
 
 .big-card ul li {
   list-style-type: none;
-  font-size: 20px;
+
   line-height: 1.4;
   // opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
+  position:relative;
+  zoom: 1;
+  display: inline;
 }
 
 .big-card .big-card-infos {
