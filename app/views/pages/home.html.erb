@@ -6,9 +6,9 @@
     <!-- "input-group mb-3" -->
 
     <p>Cycle around Japan.</p>
-      <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+      <%= simple_form_for :search, url: cycles_path, method: :get do |f| %>
         <div class="search-form-control form-group">
-          <input class="form-control string required" type="text" name="search[query]" id="banner-typed-text"/>
+          <input class="form-control string required" type="text" name="query" id="banner-typed-text"/>
           <button name="button" type="submit" class="btn btn-flat">
             <i class="fas fa-search"></i> Search
           </button>
