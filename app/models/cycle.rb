@@ -12,7 +12,6 @@ class Cycle < ApplicationRecord
 
 
   validates :brand, presence: true
-  # validates :newstatus, presence: true
   validates :color, presence: true
   validates :category, presence: true
   validates :price, presence: true

@@ -7,7 +7,7 @@ class CreateCycles < ActiveRecord::Migration[5.2]
       t.integer :price
       t.text :description
       t.string :location
-      t.boolean :newstatus
+
 
       t.timestamps
     end
