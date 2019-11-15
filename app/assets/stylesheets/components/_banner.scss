@@ -1,38 +1,56 @@
 .banner-container {
   position: relative;
+  height: 100vh;
 }
 
 .video-container {
    width: 100%;
-   height: 100vh;
+   height: 100%;
    background-size: cover;
    display: flex;
    // justify-content: center;
    object-fit: cover;
-   top: 0;
+   // top: 0;
+   opacity: 0.5;
 }
 
 .container video {
   z-index:0;
 }
 
-.overlay {
+.stacked-container {
   position: absolute;
-  top: 50%;
-  left: 33%;
-  z-index: 1;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  // position: absolute;
+  // top: 50%;
+  // left: 33%;
+  // z-index: 1;
   width: 450px;
 }
 
-#tagline h1 {
-  position: absolute;
+#tagline {
+  // position: absolute;
   font-size: 56px;
   font-weight: bolder;
   // left: 30%;
-  top: 35%;
-  left: 22%;
+  // top: 35%;
+  // left: 22%;
   color: black;
-  z-index: 2;
+  // z-index: 2;
   font-family: 'Muli', sans-serif;
   // justify-content: center;
   background-color: rgba(246,150,80,0.3)
@@ -48,9 +66,9 @@
   // opacity: 0.7;
   }
 
-.overlay-base {
+.overlay-base video {
   // background-color: black;
-  opacity: 0.5;
+  // opacity: 0.5;
 }
 
 .log-in-banner {

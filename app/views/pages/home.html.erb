@@ -1,22 +1,22 @@
 <div class="banner-container">
-   <div id="tagline">
-      <h1> Shop for your next cycle with ease </h1>
-    </div>
-    <div class="overlay">
+  <div class="stacked-container">
+    <div class="text-container">
+      <h1 id="tagline">Shop for your next cycle with ease </h1>
+      <div class="overlay">
         <div class="search-content">
-            <p>Search cycles</p>
-            <%= simple_form_for :search, url: cycles_path, method: :get do |f| %>
-            <div class="search-form-control form-group">
-                <input id= "yellow-form" class="form-control string required" type="text" name="query" id="banner-typed-text" />
-                <button name="button" type="submit" class="btn btn-flat">
-                    <i class="fas fa-search"></i> Search
-                </button>
+          <p>Search cycles</p>
+          <%= simple_form_for :search, url: cycles_path, method: :get do |f| %>
+          <div class="search-form-control form-group">
+            <input id= "yellow-form" class="form-control string required" type="text" name="query" id="banner-typed-text" />
+            <button name="button" type="submit" class="btn btn-flat">
+              <i class="fas fa-search"></i> Search
+            </button>
 
             <% end %>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="overlay-base">
-        <%= video_tag("bike.mp4", autoplay: true, loop: :loop, mute: :mute, class: "video-container") %>
-    </div>
+  </div>
+  <%= video_tag("bike.mp4", autoplay: "", loop: "", muted: "", class: "video-container") %>
 </div>
