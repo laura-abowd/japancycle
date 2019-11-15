@@ -1,13 +1,13 @@
 // BIG CARD
 .big-card {
   // overflow: hidden;
-  height: 340px;
+  height: 270px;
   width: 90%;
   background: yellow;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 2px;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .big-card h2 {
-  font-size: 45px;
+  font-size: 36px;
   font-weight: bold;
   margin: 0;
   position: absolute;
@@ -37,8 +37,9 @@
 }
 
 .info-list {
+  font-family: Open Sans;
   padding: 30px 15px 0px 35px;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -76,29 +77,23 @@
 .small-card {
   background: #090909;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 10px;
+  border-radius: 2px;
   overflow: hidden;
   color: white;
   .card-price {
-    font-size: 22px;
+    font-size: 18px;
+    padding-right: 16px;
+    padding-top: 16px;
   }
 }
-
-.fa-heart {
-    position: absolute;
-    bottom: 18px;
-    left: 28px;
-    font-size: 28px;
-  }
 
 .small-card:hover {
   box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-price:hover {
+  .card-price {
     color: #FFED31;
     text-shadow: 1px 1px 2px #090909, 0 0 1em #FFED31, 0 0 0.2em #FFED31;
   }
+}
 
 .small-card img {
   width: 100%;
@@ -108,16 +103,15 @@
   background-color: white
 }
 
-.small-card .small-card-infos {
+.small-card {
   h3 {
-    font-weight: bolder;
-    font-size: 30px;
+    font-size: 24px;
   }
-  h5 {
-   font-size: 15px;
-   font-weight: normal;
+  .small-card-infos h5 {
+   font-size: 18px;
+   margin: 16px;
   }
-  margin: 16px 16px 0px 16px;
+margin: 16px 16px 0px 16px;
 }
 
 #cyclephoto {

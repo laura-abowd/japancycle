@@ -1,5 +1,5 @@
 <br>
-<div class="container mt-3">
+<div class="container mt-3 mb-3">
   <h2>Log in</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -17,11 +17,11 @@
   <div class="form-actions">
     <%= f.button :submit, "Log in", class: "btn-yellow"  %>
     <br>
-    <%= render "devise/shared/links" %>
   </div>
   <% end %>
+  <br>
+      <%= render "devise/shared/links" %>
 </div>
-<br>
-<br>
 
 
+<%= image_tag "http://ofo.oss-cn-qingdao.aliyuncs.com/ofoweb/official/foot_picture_2.png", alt: "alttext", class: "log-in-banner" %>
