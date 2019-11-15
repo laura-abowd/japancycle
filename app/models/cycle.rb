@@ -2,7 +2,7 @@ class Cycle < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_fields,
-    against: [ :brand, :color, :category, :location, :newstatus],
+    against: [ :brand, :color, :category, :location],
     using: {
       tsearch: { prefix: true } # <-- now `superman batm` will return something!
     }
