@@ -12,22 +12,36 @@ User.create!(email: "naoto.n.suzuki@gmail.com", password: "password", first_name
 users = User.all
 
 
-Cycle.create!(user: users.sample,  brand: "Scott", color: 'black', category: 'road', price: '12000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2503390.jpg')
-Cycle.create!(user: users.sample,  brand: "Shimano", color: 'orange', category: 'mountain', price: '10000', town: "Setagaya", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://bikesoup.imgix.net/PxfM946im8kRiTuY9/marketplace/HcepgpHbGW4cxNYcL/498825-IMG-20191004-WA0010.jpg')
-Cycle.create!(user: users.sample,  brand: "Cannondale", color: 'black', category: 'electric', price: '30000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2519999.jpg')
-Cycle.create!(user: users.sample,  brand: "Electra", color: 'orange', category: 'lowrider', price: '15000', town: "Ginza", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2479272.jpg')
-Cycle.create!(user: users.sample,  brand: "Specialized", color: 'red', category: 'electric', price: '12000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2454186.jpg')
-Cycle.create!(user: users.sample,  brand: "Peugeot", color: 'golden', category: 'vintage', price: '10000', town: "Setagaya", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2518513.jpg')
-Cycle.create!(user: users.sample,  brand: "BMC", color: 'black', category: 'urban', price: '30000', town: "Ikebukuro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2519238.jpg')
-Cycle.create!(user: users.sample,  brand: "Specialized", color: 'green', category: 'mountain', price: '15000', town: "Sagamihara", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2491171.jpg')
-Cycle.create!(user: users.sample,  brand: "Intercycles", color: 'grey', category: 'tandem', price: '12000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2494545.jpg')
-Cycle.create!(user: users.sample,  brand: "Mercier", color: 'blue', category: 'urban', price: '10000', town: "Yokohama", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2511647.jpg')
-Cycle.create!(user: users.sample,  brand: "Orbea", color: 'yellow', category: 'urban', price: '30000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2511270.jpg')
-Cycle.create!(user: users.sample,  brand: "Mondraker", color: 'orange', category: 'mountain', price: '15000', town: "Shinjuku", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2483047.jpg')
-Cycle.create!(user: users.sample,  brand: "Giant", color: 'blue', category: 'mountain', price: '12000', town: "Shibuya", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2520467.jpg')
-Cycle.create!(user: users.sample,  brand: "Bianchi", color: 'green', category: 'road', price: '10000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2508716.jpg')
-Cycle.create!(user: users.sample,  brand: "Look cycles", color: 'red', category: 'road', price: '30000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2457692.jpg')
-Cycle.create!(user: users.sample,  brand: "Kalkhoff", color: 'black', category: 'urban', price: '15000', town: "Meguro", description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', location: '2 Chome-11-3 Meguro, Meguro City, Tokyo 153-0063', photo: 'https://media.troc-velo.com/bikes/img0n2520603.jpg')
+Cycle.create!(user: users.sample,  brand: "Scott", color: 'black', category: 'road', price: '12000', town: "Meguro", description: 'Brand new and definitely ready for a new owner! Price is not negotiatble, thanks.', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2503390.jpg')
+Cycle.create!(user: users.sample,  brand: "Shimano", color: 'orange', category: 'mountain', price: '10000', town: "Minato", description: 'New and ready for pick-up anytime after the end of November 2019. Contact for more details.', location: 'Minato, Tokyo', photo: 'https://bikesoup.imgix.net/PxfM946im8kRiTuY9/marketplace/HcepgpHbGW4cxNYcL/498825-IMG-20191004-WA0010.jpg')
+Cycle.create!(user: users.sample,  brand: "Cannondale", color: 'black', category: 'electric', price: '30000', town: "Otaku", description: 'Only one color available. Only serious buyer please.', location: 'Otaku, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2519999.jpg')
+Cycle.create!(user: users.sample,  brand: "Electra", color: 'orange', category: 'lowrider', price: '15000', town: "Ginza", description: 'Contact for more details and price is non-negotiable!', location: 'Ginza, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2479272.jpg')
+Cycle.create!(user: users.sample,  brand: "Specialized", color: 'red', category: 'electric', price: '12000', town: "Meguro", description: 'Great for those on budget :) Pick-up only, we DO NOT deliver. Thank you for your understanding.', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2454186.jpg')
+Cycle.create!(user: users.sample,  brand: "Peugeot", color: 'golden', category: 'vintage', price: '10000', town: "Setagaya", description: 'Only one color available but brand new. Made in Japan.', location: 'Setagaya, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2518513.jpg')
+Cycle.create!(user: users.sample,  brand: "BMC", color: 'black', category: 'urban', price: '30000', town: "Ikebukuro", description: 'Made in Japan and brand new. Popular type amongst the bikers!', location: 'Ikebukuro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2519238.jpg')
+Cycle.create!(user: users.sample,  brand: "Specialized", color: 'green', category: 'mountain', price: '15000', town: "Sagamihara", description: 'Great for those on budget. Pick-up only', location: 'Sagamihara, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2491171.jpg')
+Cycle.create!(user: users.sample,  brand: "Intercycles", color: 'grey', category: 'tandem', price: '12000', town: "Meguro", description: 'Pick-up only, we DO NOT deliver. Thank you for your understanding.', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2494545.jpg')
+Cycle.create!(user: users.sample,  brand: "Mercier", color: 'blue', category: 'urban', price: '10000', town: "Yokohama", description: 'One of the best selling bikes in our store. Email us to enquire thanks!', location: 'Yokohama, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2511647.jpg')
+Cycle.create!(user: users.sample,  brand: "Orbea", color: 'yellow', category: 'urban', price: '30000', town: "Meguro", description: 'Only one color available. Only serious buyer please.', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2511270.jpg')
+Cycle.create!(user: users.sample,  brand: "Mondraker", color: 'orange', category: 'mountain', price: '15000', town: "Shinjuku", description: 'Only one color available. Made in Japan and brand new!', location: 'Shinjuku, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2483047.jpg')
+Cycle.create!(user: users.sample,  brand: "Giant", color: 'blue', category: 'mountain', price: '12000', town: "Shibuya", description: 'Only serious buyer please. Price is non-negotiable.', location: 'Shibuya, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2520467.jpg')
+Cycle.create!(user: users.sample,  brand: "Shimano", color: 'green', category: 'road', price: '10000', town: "Meguro", description: 'Cheap but amazing quality. Made in Japan :)', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2508716.jpg')
+Cycle.create!(user: users.sample,  brand: "Look cycles", color: 'red', category: 'road', price: '30000', town: "Meguro", description: 'Pick-up only, we DO NOT deliver. Thank you for your understanding.', location: 'Meguro, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2457692.jpg')
+Cycle.create!(user: users.sample,  brand: "Kalkhoff", color: 'black', category: 'urban', price: '15000', town: "Shibuya", description: 'Only one color available. Only serious buyer please.', location: 'Shibuya, Tokyo', photo: 'https://media.troc-velo.com/bikes/img0n2520603.jpg')
 
-cycles = Cycle.all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
