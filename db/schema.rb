@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 2019_11_15_015516) do
     t.integer "price"
     t.text "description"
     t.string "location"
-    t.boolean "newstatus"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
