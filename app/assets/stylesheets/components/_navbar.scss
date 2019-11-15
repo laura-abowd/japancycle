@@ -1,23 +1,59 @@
+// .navbar-japancycle {
+//   justify-content: space-between;
+//   background: #090909;
+//   color: #FFED31;
+//   text-decoration: none;
+
+  // a {
+  //   color: #FFED31 !important;
+  // }
+
+//   a:visited {
+//     color: white;
+//   }
+
+//   a:hover {
+//     color: white;
+//     text-decoration: none;
+//     cursor: pointer;
+//   }
+// }
+
 .navbar-japancycle {
   justify-content: space-between;
   background: #090909;
   color: #FFED31;
   text-decoration: none;
-
-  a {
+    a {
     color: #FFED31 !important;
   }
+}
 
-  a:visited {
-    color: white;
-  }
-
-  a:hover {
+.navbar-nav {
+   a:hover {
     color: white;
     text-decoration: none;
     cursor: pointer;
   }
 }
+
+#navbarSupportedContent {
+  a:visited {
+    color: white !important;
+  }
+}
+
+// #notification-text {
+  // color: black;
+//   a:visited {
+//     color: red !important;
+//   }
+// }
+
+#fa-bell {
+  padding-top: 10px;
+}
+
 
 #logo-font {
   font-family: Numans;
@@ -35,9 +71,6 @@
   flex-grow: 0;
 }
 
-.navbar-japancycle .navbar-brand img {
-  width: 40px;
-}
 
 // navbar button
 
@@ -51,7 +84,7 @@
 }
 
 .drop-down-item {
-  color:  black;
+  color: black !important;
   font-family: Open Sans;
 }
 

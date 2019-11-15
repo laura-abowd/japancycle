@@ -3,37 +3,49 @@
 }
 
 .video-container {
- width: 100%;
- height: 100vh;
- background-size: cover;
- display: flex;
- justify-content: center;
- object-fit: cover;
- top: 0;
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   display: flex;
+   // justify-content: center;
+   object-fit: cover;
+   top: 0;
 }
 
 .container video {
-    z-index:0;
+  z-index:0;
 }
 
 .overlay {
-    position:absolute;
-    top: 42%;
-    left: 33%;
-    z-index: 1;
-    width: 450px;
-    text-align: center;
-    font-weight: bolder;
-    text-shadow: 1px 1px 2px grey;
-    p {
-      color: black;
-      font-family: Numans;
-      font-size: 32px;
-      // opacity: 0.7;
-    }
+  position: absolute;
+  top: 42%;
+  left: 33%;
+  z-index: 1;
+  width: 450px;
 }
 
+#tagline h1 {
+  position: absolute;
+  font-size: 48px;
+  // left: 30%;
+  top: 220px;
+  left: 20%;
+  color: black;
+  z-index: 2;
+  // justify-content: center;
+}
+
+.overlay p {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Numans;
+  font-size: 32px;
+  text-shadow: 1px 1px 1px grey;
+  // opacity: 0.7;
+  }
+
 .overlay-base {
-  background-color: black;
+  // background-color: black;
   opacity: 0.5;
 }
