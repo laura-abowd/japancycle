@@ -13,12 +13,15 @@
     <ul class="navbar-nav justify-content-right">
 
       <% if user_signed_in? %>
-        <li class="nav-item dropdown">
+        <li id="fa-bell" class="nav-item dropdown">
 
           <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            <div id= "fa-bell"><i class="fas fa-bell fa-lg"></i></div></div>
+            <i class="fas fa-bell fa-lg"></i></div>
             <div id="notification-text" class="dropdown-menu">
-              <%= link_to "Notifications", dashboard_path, class: "dropdown-item text-dark" %>
+              <%= link_to dashboard_path do %>
+                <div class="dropdown-item text-dark w-100 h-100">Notifications</div>
+              <% end %>
+
             </div>
         </li>
         <li class="nav-item">

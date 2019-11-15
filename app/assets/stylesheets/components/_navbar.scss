@@ -20,6 +20,7 @@
 // }
 
 .navbar-japancycle {
+  z-index: 100000;
   justify-content: space-between;
   background: #090909;
   color: #FFED31;
@@ -50,9 +51,7 @@
   }
 }
 
-#fa-bell {
-  padding-top: 10px;
-}
+
 
 
 #logo-font {
@@ -73,11 +72,15 @@
 
 
 // navbar button
-
 .nav-item {
+  margin: 5px;
+  border-radius: 4px;
+  // font-family: Open Sans;
   font-family: Numans;
   border: solid 1px black;
-  a:hover {
+  &:hover {
+    border-radius: 4px;
+    border: solid 1px yellow;
     border-color: yellow;
     transition: 1s;
   }
@@ -88,3 +91,18 @@
   font-family: Open Sans;
 }
 
+// .dropdown {
+//   padding-top: 10px;
+// }
+
+#fa-bell {
+  border: none;
+  &:hover {
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.nav-link, #fa-bell i {
+  line-height: 2em;
+}
