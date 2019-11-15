@@ -18,7 +18,7 @@
 
 .overlay {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 33%;
   z-index: 1;
   width: 450px;
@@ -26,13 +26,16 @@
 
 #tagline h1 {
   position: absolute;
-  font-size: 48px;
+  font-size: 56px;
+  font-weight: bolder;
   // left: 30%;
-  top: 220px;
-  left: 20%;
+  top: 35%;
+  left: 22%;
   color: black;
   z-index: 2;
+  font-family: 'Muli', sans-serif;
   // justify-content: center;
+  background-color: rgba(246,150,80,0.3)
 }
 
 .overlay p {
@@ -40,12 +43,20 @@
   text-align: center;
   font-weight: bolder;
   font-family: Numans;
-  font-size: 32px;
-  text-shadow: 1px 1px 1px grey;
+  font-size: 24px;
+  // text-shadow: 1px 1px 1px black;
   // opacity: 0.7;
   }
 
 .overlay-base {
   // background-color: black;
   opacity: 0.5;
+}
+
+.log-in-banner {
+  background-size: cover;
+}
+
+#ease {
+  font-family: 'Homemade Apple', cursive;
 }

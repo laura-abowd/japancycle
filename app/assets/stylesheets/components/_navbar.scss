@@ -25,30 +25,30 @@
   color: #FFED31;
   text-decoration: none;
     a {
-    color: #FFED31 !important;
+    color: #FFED31;
   }
 }
 
-.navbar-nav {
-   a:hover {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
+// .navbar-nav {
+//    a:hover {
+//     color: white;
+//     text-decoration: none;
+//     cursor: pointer;
+//   }
+// }
 
 #navbarSupportedContent {
   a:visited {
-    color: white !important;
+    color: white;
   }
 }
 
-// #notification-text {
-  // color: black;
-//   a:visited {
-//     color: red !important;
-//   }
-// }
+#notification-text {
+  color: black;
+  a {
+    color: black !important;
+  }
+}
 
 #fa-bell {
   padding-top: 10px;
@@ -65,6 +65,7 @@
   font-size: 20px;
   text-decoration: none;
 }
+
 
 .navbar-japancycle .navbar-collapse {
   flex-grow: 0;

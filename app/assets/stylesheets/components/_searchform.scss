@@ -13,19 +13,17 @@
 .search-form-control .form-control {
   height: 3.5rem;
   box-shadow: 5px 5px 3px 3px yellow;
-
 }
 
 .search-form-control .form-control:focus {
-
   outline: none !important;
-  box-shadow: 5px 5px 3px 3px yellow;
+  // box-shadow: 5px 5px 3px 3px yellow;
 }
 
 .form-control:focus {
   border-color: yellow;
 }
 
-.form-control {
+#yellow-form {
   border: none;
 }
