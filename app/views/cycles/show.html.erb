@@ -15,6 +15,7 @@
         <li><strong>Location </strong></li>
         <li><strong>Price </strong></li>
         <li><strong>Contact name </strong></li>
+        <li><strong>Note </strong></li>
       </div>
 
 
@@ -24,6 +25,7 @@
         <li><%= @cycle.town.capitalize %></li>
         <li>¥<%= @cycle.price %></li>
         <li><%= @cycle.user.first_name.capitalize %></li>
+        <li><%= @cycle.description.capitalize %></li>
       </div>
     </div>
     <%= image_tag @cycle.photo, alt: "current cycle" %>
