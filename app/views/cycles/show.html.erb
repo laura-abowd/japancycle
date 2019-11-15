@@ -1,4 +1,9 @@
+
+<br>
+<div class="container mt-3">
+
 <div class="container justify-content-around mt-5">
+
   <div class="big-card">
     <h2><%= @cycle.brand.capitalize%></h2>
       <br>
@@ -11,6 +16,7 @@
         <li><strong>Price </strong></li>
         <li><strong>Contact name </strong></li>
       </div>
+
 
       <div style="list-style-type: none; display: inline-block; margin-left: 1em;">
         <li><%= @cycle.category.capitalize %></li>
@@ -33,4 +39,15 @@
       <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
     <% end %>
   <% end %>
-</div>
+  <br>
+  <br>
+
+  <div
+  id="map"
+
+  style="width: 90%;
+  height: 400px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="pk.eyJ1IjoibmFvdG9zdXp1a2kxMSIsImEiOiJjazI1Z3hrd2IwNGF0M3BvZzJ2d2tsdTF4In0.MrCZy7dD9c-SBp5N2FVTNA"
+></div>
+
