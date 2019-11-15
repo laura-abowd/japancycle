@@ -18,7 +18,7 @@
 
 .overlay {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 33%;
   z-index: 1;
   width: 450px;
@@ -27,13 +27,15 @@
 #tagline h1 {
   position: absolute;
   font-size: 56px;
+  font-weight: bolder;
   // left: 30%;
-  top: 200px;
-  left: 20%;
+  top: 35%;
+  left: 22%;
   color: black;
   z-index: 2;
- font-family: 'Muli', sans-serif;
+  font-family: 'Muli', sans-serif;
   // justify-content: center;
+  background-color: rgba(246,150,80,0.3)
 }
 
 .overlay p {
@@ -53,4 +55,8 @@
 
 .log-in-banner {
   background-size: cover;
+}
+
+#ease {
+  font-family: 'Homemade Apple', cursive;
 }
