@@ -1,5 +1,5 @@
 
-<br>
+
 <div class="container mt-3">
 
 <div class="container justify-content-around mt-5">
@@ -31,6 +31,18 @@
 
   <br><br>
 
+
+  <div
+  id="map"
+
+  style="width: 90%;
+  height: 300px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="pk.eyJ1IjoibmFvdG9zdXp1a2kxMSIsImEiOiJjazI1Z3hrd2IwNGF0M3BvZzJ2d2tsdTF4In0.MrCZy7dD9c-SBp5N2FVTNA"
+></div>
+
+  <br><br>
+
   <%= simple_form_for([@cycle, @booking]) do |f| %>
   <%= f.error_notification %>
     <%=f.input :Description, label: "Contact the seller to purchase." %>
@@ -39,18 +51,6 @@
       <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
     <% end %>
   <% end %>
-  <br>
-  <br>
-
-  <div
-  id="map"
-
-  style="width: 90%;
-  height: 400px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="pk.eyJ1IjoibmFvdG9zdXp1a2kxMSIsImEiOiJjazI1Z3hrd2IwNGF0M3BvZzJ2d2tsdTF4In0.MrCZy7dD9c-SBp5N2FVTNA"
-></div>
-
   <br>
   <br>
 
