@@ -15,7 +15,6 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
 import 'bootstrap';
 
 import { loadDynamicBannerText } from '../components/banner';
@@ -30,4 +29,11 @@ initSweetalert('#new_booking input[type=submit]', {
 }, (value) => {
   document.getElementById('new_booking').submit();
 });
+
+// CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
+// internal imports
+import { initMapbox } from '../plugins/init_mapbox';
+
+initMapbox();
 

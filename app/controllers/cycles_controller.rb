@@ -13,7 +13,15 @@ class CyclesController < ApplicationController
   def show
     @cycle = Cycle.find(params[:id])
     @booking = Booking.new
+    @cycles = Cycle.geocoded
+    @markers = @cycles.map do |cycle|
+      {
+        lat: cycle.latitude,
+        lng: cycle.longitude
+      }
+    end
   end
+
 
   def create
     @cycle = Cycle.new(cycle_params)
