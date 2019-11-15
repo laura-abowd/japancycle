@@ -3,12 +3,20 @@ class CyclesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    if params[:query].present?
+    if params[:search].present?
+      @brand = params[:search][:brand]
+      @color = params[:search][:color]
+      @category = params[:search][:category]
+      @town = params[:search][:town]
+      params_for_search = [@brand, @color, @category, @town].join(' ')
+      @cycles = Cycle.search_by_fields(params_for_search)
+    elsif params[:query].present?
       @cycles = Cycle.search_by_fields(params[:query])
     else
-    @cycles = Cycle.all
+      @cycles = Cycle.all
     end
   end
+
 
   def show
     @cycle = Cycle.find(params[:id])

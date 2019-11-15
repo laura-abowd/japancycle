@@ -1,6 +1,24 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 
+<div class="container p-2">
+<%= simple_form_for :search, url: cycles_path, method:'GET', html: {class: 'form-inline'} do |f| %>
+    <div class="form-group mb-2 mx-2">
+          <%= f.input :brand, collection: Cycle::BRAND, class: 'form-control', required: false, selected: @brand, include_blank: 'All' %>
+    </div>
+    <div class="form-group mx-2 mb-2">
+          <%= f.input :color, collection: Cycle::COLOR, class: 'form-control mr-2', required: false, selected: @color, include_blank: 'All' %>
+    </div>
+    <div class="form-group mx-2 mb-2">
+          <%= f.input :category, collection: Cycle::CATEGORY, class: 'form-control mr-2', required: false, selected: @category, include_blank: 'All' %>
+    </div>
+    <div class="form-group mx-2 mb-2">
+          <%= f.input :town, collection: Cycle::TOWN, class: 'form-control mr-2', required: false, selected: @town, include_blank: 'All' %>
+    </div>
+    <div class="form-group">
+          <%= f.submit "Search", class: "btn-yellow" %>
+    </div>
+      <% end %>
 
 
 <div class="container mt-3 mb-3">

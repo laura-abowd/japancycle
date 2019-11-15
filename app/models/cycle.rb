@@ -21,10 +21,10 @@ class Cycle < ApplicationRecord
   validates :location, presence: true
   validates :town, presence: true
 
-  # BRAND = Cycle.select(:brand).map(&:brand).uniq.reject(&:blank?)
-  # COLOR = Cycle.select(:color).map(&:color).uniq.reject(&:blank?)
-  # CATEGORY = Cycle.select(:category).map(&:category).uniq.reject(&:blank?)
-  # TOWN = Cycle.select(:town).map(&:town).uniq.reject(&:blank?)
+  BRAND = Cycle.select(:brand).map(&:brand).uniq.reject(&:blank?)
+  COLOR = Cycle.select(:color).map(&:color).uniq.reject(&:blank?)
+  CATEGORY = Cycle.select(:category).map(&:category).uniq.reject(&:blank?)
+  TOWN = Cycle.select(:town).map(&:town).uniq.reject(&:blank?)
 
 end
 
