@@ -14,11 +14,14 @@
   </head>
 
   <body>
+    <div class="content">
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
     <%= yield %>
-    <%= render "shared/footer" %>
+    </div>
+    <div class="footer-adjust">
+      <%= render "shared/footer" %>
+    </div>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
   </body>

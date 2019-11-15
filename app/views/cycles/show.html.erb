@@ -1,8 +1,6 @@
-<br>
-<div class="container mt-3">
+<div class="container justify-content-around mt-5">
   <div class="big-card">
-
-    <div><h2><%= @cycle.brand.capitalize%></h2></div>
+    <h2><%= @cycle.brand.capitalize%></h2>
       <br>
       <br>
       <div class="info-list">
@@ -14,7 +12,6 @@
         <li><strong>Contact name </strong></li>
       </div>
 
-    
       <div style="list-style-type: none; display: inline-block; margin-left: 1em;">
         <li><%= @cycle.category.capitalize %></li>
         <li><%= @cycle.color.capitalize %></li>
@@ -30,13 +27,10 @@
 
   <%= simple_form_for([@cycle, @booking]) do |f| %>
   <%= f.error_notification %>
-
     <%=f.input :Description, label: "Contact the seller to purchase." %>
-
     <%= f.button :submit, 'Request to purchase', class: "btn-yellow" %>
-    <%= link_to cycles_path do %>
-    <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
+    <%= link_to root_path do %>
+      <%= f.button :button, "Cancel", type: "reset", class: "btn-blk" %>
     <% end %>
   <% end %>
-
 </div>
