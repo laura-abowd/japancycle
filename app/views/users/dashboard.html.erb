@@ -1,38 +1,46 @@
 <div class="container m-5 mx-auto">
-  <div class="row">
-    <div class="col-12 align-items-center">
-       <h1 style="font-family: Muli; font-size: 24px;"><i class="fas fa-address-book" style="font-size: 20px;"></i> My Account</h1>
-        <h1 style="font-family: Muli; font-size: 40px;">Request Status</h1>
-        <div class="yellow-border-x" style="width: 500px;"></div>
-    </div>
-    <div class="col-12 mt-5 mb-3">
-      <%@cycles.each do |cycle|%>
-      <div class="mb-3">
-      <div class="big-card small">
-        <div class="info-list-dashboard">
-          <div style="list-style-type: none; display: inline-block;">
-            <li><strong>Brand </strong></li>
-            <li><strong>Location </strong></li>
-            <li><strong>Price </strong></li>
-            <li><strong>Seller </strong></li>
-            <li><strong>Contact </strong></li>
-            <li><strong>Status </strong></li>
-         </div>
-
-          <div style="list-style-type: none; display: inline-block; margin-left: 1em;">
-            <li><%= cycle.brand %></li>
-            <li><%= cycle.town.capitalize %></li>
-            <li>¥<%= cycle.price %></li>
-            <li><%= cycle.user.first_name.capitalize %></li>
-            <li><%= cycle.user.email %></li>
-            <li>Pending approval</li>
-          </div>
+    <div class="row">
+        <div class="col-12 align-items-center">
+            <h1 style="font-family: Muli; font-size: 24px;"><i class="fas fa-address-book" style="font-size: 20px;"></i> My Account</h1>
+            <h1 style="font-family: Muli; font-size: 40px;">Request Status</h1>
+            <div class="yellow-border-x" style="width: 500px;"></div>
         </div>
-        <%= image_tag cycle.photo, alt: "current cycle" %>
-      </div>
-      </div>
-      <% end %>
+        <div class="col-12 mt-5 mb-3">
+            <%@cycles.each do |cycle|%>
+            <div class="mb-3">
+                <div class="big-card small">
+                    <div class="info-list-dashboard">
+                        <div style="list-style-type: none; display: inline-block;">
+                            <li><strong>Brand </strong></li>
+                            <li><strong>Location </strong></li>
+                            <li><strong>Price </strong></li>
+                            <li><strong>Seller </strong></li>
+                            <li><strong>Contact </strong></li>
+                            <li><strong>Status </strong></li>
+                        </div>
+                        <div style="list-style-type: none; display: inline-block; margin-left: 1em;">
+                            <li>
+                                <%= cycle.brand %>
+                            </li>
+                            <li>
+                                <%= cycle.town.capitalize %>
+                            </li>
+                            <li>¥
+                                <%= cycle.price %>
+                            </li>
+                            <li>
+                                <%= cycle.user.first_name.capitalize %>
+                            </li>
+                            <li>
+                                <%= cycle.user.email %>
+                            </li>
+                            <li>Pending approval</li>
+                        </div>
+                    </div>
+                    <%= image_tag cycle.photo, alt: "current cycle" %>
+                </div>
+            </div>
+            <% end %>
+        </div>
     </div>
-
-  </div>
 </div>

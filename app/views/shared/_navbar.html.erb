@@ -1,46 +1,40 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-japancycle">
-  <div class="logo" style="align-items: center">
-    <i class="fas fa-biking"></i>
-    <%= link_to 'JapanCycle', root_path, id: "logo-font"%>
-  </div>
-
-
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+    <div class="logo" style="align-items: center">
+        <i class="fas fa-biking"></i>
+        <%= link_to 'JapanCycle', root_path, id: "logo-font"%>
+    </div>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
   </button> <%#= link_to "#", class: "navbar-brand" do %> <%#= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %> <#% end %> <%#= link_to "#", class: "navbar-brand" do %> <#%= image_tag
   "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %> <#% end %> -->
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav justify-content-right">
-
-      <% if user_signed_in? %>
-        <li id="fa-bell" class="nav-item dropdown">
-
-          <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            <i class="fas fa-bell fa-lg"></i></div>
-            <div id="notification-text" class="dropdown-menu">
-              <%= link_to dashboard_path do %>
-                <div class="dropdown-item text-dark w-100 h-100">Notifications</div>
-              <% end %>
-
-            </div>
-        </li>
-        <li class="nav-item">
-          <%= link_to "List a Cycle", new_cycle_path , class: "nav-link" %>
-        <li class="nav-item">
-          <%= link_to "Explore", cycles_path, class: "nav-link" %>
-        </li>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Explore", cycles_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-right">
+            <% if user_signed_in? %>
+            <li id="fa-bell" class="nav-item dropdown">
+                <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell fa-lg"></i></div>
+                <div id="notification-text" class="dropdown-menu">
+                    <%= link_to dashboard_path do %>
+                    <div class="dropdown-item text-dark w-100 h-100">Notifications</div>
+                    <% end %>
+                </div>
+            </li>
+            <li class="nav-item">
+                <%= link_to "List a Cycle", new_cycle_path , class: "nav-link" %>
+            <li class="nav-item">
+                <%= link_to "Explore", cycles_path, class: "nav-link" %>
+            </li>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+            </li>
+            <% else %>
+            <li class="nav-item">
+                <%= link_to "Explore", cycles_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
 </div>

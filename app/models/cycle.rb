@@ -3,9 +3,9 @@ class Cycle < ApplicationRecord
   include PgSearch::Model
   pg_search_scope :search_by_fields,
     against: [ :brand, :color, :category, :town],
-    using: {
-      tsearch: { prefix: true } # <-- now `superman batm` will return something!
-    }
+  using: {
+    tsearch: { prefix: true } # <-- now `superman batm` will return something!
+  }
 
   geocoded_by :location
   after_validation :geocode, if: :will_save_change_to_location?
@@ -27,6 +27,3 @@ class Cycle < ApplicationRecord
   TOWN = Cycle.select(:town).map(&:town).uniq.reject(&:blank?)
 
 end
-
-
-

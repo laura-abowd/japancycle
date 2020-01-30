@@ -11,8 +11,8 @@ class CyclesController < ApplicationController
       if [@brand, @color, @category, @town].join.empty?
         @cycles = Cycle.all
       else
-      params_for_search = [@brand, @color, @category, @town].join(' ')
-      @cycles = Cycle.search_by_fields(params_for_search)
+        params_for_search = [@brand, @color, @category, @town].join(' ')
+        @cycles = Cycle.search_by_fields(params_for_search)
       end
     elsif params[:query].present?
       @cycles = Cycle.search_by_fields(params[:query])
